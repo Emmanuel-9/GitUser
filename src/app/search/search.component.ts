@@ -19,7 +19,7 @@ export class SearchComponent implements OnInit {
   submitUserName(){
      console.log(this.userName['name'])
      this.http.get<Users>(`https://api.github.com/users/${this.userName['name']}`).subscribe({
-      //  next(response) {console.log(response)}
+      
       next: user => this.retrievedUser = user
      })
    }
