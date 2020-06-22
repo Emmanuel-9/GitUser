@@ -1,36 +1,33 @@
-<div class="row">
-    <div class="col-sm-12">
-        <div class="row avatar" >
-            <img src="https://avatars0.githubusercontent.com/u/39437054?v=4" alt=" ">
-        </div>
-        <div class="row personalInfo" >
-            <div class="col-sm-12">
-                <h1>{{currentUser.name}}</h1>
-                <p>| {{currentUser.bio}} |</p>
-                <p>{{currentUser.location}}</p>
-            </div>
-            
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-sm-12">
-        <table class="table table-bordered table-sm table-hover">
-            <thead class="thead-dark">
-              <tr>
+<div class= "avatar" >
+  <img src="https://avatars1.githubusercontent.com/u/64582040?v=4">
+</div>   
+   <div class="row personalInfo" >
+        <h1>{{currentUser.name}}</h1>
+        <p>| {{currentUser.bio}} |</p>
+        <p>{{currentUser.location}}</p>
+    </div>    
+        <table>
+            <thead>
+            <tr>
                 <th scope="col">Name</th>
                 <th scope="col">Description</th>
-                <th scope="col">Created On</th>
-              </tr>
+                <th scope="col">Day of Creation</th>
+            </tr>
             </thead>
-            <tbody>              
-              <tr *ngFor="let repo of repos">
-                <td>{{repo.name | titlecase}}</td>
-                <td style="width: 50%">{{repo.description}}</td>                
-                <td>{{repo.created_at | date}}</td>
-              </tr>
-            </tbody>
-          </table>        
-    </div>    
-</div>
+              <tbody>              
+                 <tr *ngFor="let repo of repos">
+                    <td>{{repo.name | titlecase}}</td>
+                    <td style="width: 50%">{{repo.description}}</td>                
+                    <td>{{repo.created_at | date}}</td>
+                  </tr>
+              </tbody>
+        </table>              
+        
+    
+
+    
+        
+            
+    
+
 
