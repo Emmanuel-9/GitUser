@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
-import { UserServiceService } from './user-service.service';
+
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -22,7 +22,7 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule
   ],
-  providers: [UserServiceService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
