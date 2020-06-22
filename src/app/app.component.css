@@ -1,0 +1,50 @@
+.nav{
+    
+    margin: 0 auto;
+}
+.nav-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    background: gainsboro;
+    padding: 2em 0;
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+nav li{
+    margin-left: 2em;
+
+}
+nav a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+    padding: .25em 0;
+}
+nav a:hover,
+nav a:focus{
+    color: ivory;
+}
+.current{
+    border-bottom: 1px solid #707070;    
+}
+.current:hover{
+    color: #707070;
+}
+.sub-title{
+    font-weight: 700;
+    color: red;
+    font-size: .875rem;
+    margin: 0;
+    text-transform: uppercase;    
+}
+
