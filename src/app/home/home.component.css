@@ -6,11 +6,36 @@
 img{
     width: 20%;
     height: 20vh;
-    border-radius: 50%;
+    border-radius: 70%;
     margin: 0 auto;
 }
 .personalInfo{
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
     text-align: center;
+    
+}
+table{
+    padding: 50px;
+    
+}
+#name{
+    float: left;
+    padding: 10px;
+}
+#date{
+    padding: 20px;
+}
+#creation{
+    padding-right: 350px;
+
+}
+th{
+    font-size: x-large;
+    color: red;
+}
+td{
+    color: indigo;
+    font-size: large;
+    font-style: italic;
 }
