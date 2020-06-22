@@ -1,26 +1,19 @@
-<div class= "avatar" >
+<br><div class= "avatar" >
   <img src="https://avatars1.githubusercontent.com/u/64582040?v=4">
 </div>   
-   <div class="row personalInfo" >
+   <div class="personalInfo" >
         <h1>{{currentUser.name}}</h1>
-        <p>| {{currentUser.bio}} |</p>
-        <p>{{currentUser.location}}</p>
+        
     </div>    
         <table>
-            <thead>
-            <tr>
-                <th scope="col">Name</th>
-                <th scope="col">Description</th>
-                <th scope="col">Day of Creation</th>
+          <th id="name"><strong>Name</strong></th>
+          <th id="description"><strong>Description</strong></th>
+          <th id="creation"><strong>Day of Creation</strong></th>
+            <tr *ngFor="let repo of repos">
+              <td id="repo"><em>{{repo.name | uppercase}}</em></td>
+              <td style="width: 50%" id="desc"><em>{{repo.description}}</em></td>                
+              <td id="date"><em>{{repo.created_at | date}}</em></td>
             </tr>
-            </thead>
-              <tbody>              
-                 <tr *ngFor="let repo of repos">
-                    <td>{{repo.name | titlecase}}</td>
-                    <td style="width: 50%">{{repo.description}}</td>                
-                    <td>{{repo.created_at | date}}</td>
-                  </tr>
-              </tbody>
         </table>              
         
     
